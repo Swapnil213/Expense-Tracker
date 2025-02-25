@@ -1,0 +1,148 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.3s ease-in-out;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Title */
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input Fields */
+.input-section, #filterCategory {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    width: 100%;
+}
+
+/* Inputs */
+input, select {
+    background: #f9f9f9;
+    color: #333;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Buttons */
+button {
+    background: #4CAF50;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Expense List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #ff4d4d;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #181818;
+}
+
+.dark-mode .container {
+    background: #222;
+    color: white;
+}
+
+.dark-mode input, .dark-mode select {
+    background: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input, select, button {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
